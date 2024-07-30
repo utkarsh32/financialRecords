@@ -5,7 +5,7 @@ const Login = ({ setAuthToken }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const apiUrl = process.env.REACT_APP_API_URL;
+  const apiUrl = 'http://localhost:3010/api';
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {

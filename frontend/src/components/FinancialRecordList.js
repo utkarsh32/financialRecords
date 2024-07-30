@@ -8,7 +8,7 @@ const FinancialRecordList= ({setAuthToken}) => {
   const [description, setDescription] = useState('');
   const [amount, setAmount] = useState('');
   const [date, setDate] = useState('');
-  const apiUrl = process.env.REACT_APP_API_URL;
+  const apiUrl = 'http://localhost:3010/api';
   const navigate =useNavigate()
   const fetchRecords = async () => {
     try {
